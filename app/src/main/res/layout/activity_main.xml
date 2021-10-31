@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/backgrountColor"
+          android:orientation="vertical">
+          <androidx.cardview.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:cardElevation="7dp"
+              app:cardCornerRadius="0dp"
+              app:cardBackgroundColor="@color/white">
+
+              <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="?attr/actionBarSize"
+                  android:background="@color/colorPrimaryDark"
+                  android:orientation="horizontal">
+
+                  <androidx.cardview.widget.CardView
+                      android:id="@+id/card_fragment_and_data_table_text_onclick"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="10dp"
+                      android:layout_marginRight="10dp"
+                      app:cardBackgroundColor="@color/backgrountColor"
+                      app:cardCornerRadius="10dp"
+                      app:cardElevation="0dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      tools:ignore="MissingConstraints">
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="7dp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="7dp"
+                          android:layout_marginBottom="5dp"
+                          android:orientation="vertical">
+
+                          <TextView
+                              android:id="@+id/tv_valyuta_and_fragment_name"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:gravity="center"
+                              android:text="1$ = 10 534.20 UZS"
+                              android:textColor="@color/black"
+                              android:textSize="13dp"
+                              android:textStyle="normal" />
+
+                          <TextView
+                              android:id="@+id/tv_vlyuta_data"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="end"
+                              android:text="11.08.2021  8:50"
+                              android:textColor="#888787"
+                              android:textSize="10dp"
+                              android:textStyle="normal"
+                              android:visibility="visible" />
+                      </LinearLayout>
+                  </androidx.cardview.widget.CardView>
+
+                  <ImageView
+                      android:id="@+id/imageView2"
+                      android:layout_width="27dp"
+                      android:layout_height="27dp"
+                      android:src="@drawable/ic_baseline_menu_24"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:tint="@color/white"
+                      tools:ignore="MissingConstraints" />
+
+                  <TextView
+                      android:id="@+id/textView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginLeft="10dp"
+                      android:gravity="center"
+                      android:text="@string/app_name"
+                      android:textColor="@color/white"
+                      android:textSize="17sp"
+                      android:textStyle="bold"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintStart_toEndOf="@+id/imageView2"
+                      app:layout_constraintTop_toTopOf="parent"
+                      tools:ignore="MissingConstraints" />
+
+
+              </androidx.constraintlayout.widget.ConstraintLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <FrameLayout
+              android:id="@+id/flContainer"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1">
+
+          </FrameLayout>
+<!--          <View-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="1dp"-->
+<!--              android:background="#0FFFFFFF"/>-->
+          <com.google.android.material.bottomnavigation.BottomNavigationView
+              android:id="@+id/bottomBar"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              app:menu="@menu/botom_bar_menu"
+              app:labelVisibilityMode="labeled"
+              android:elevation="7dp"
+
+              />
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#08FFFFFF"/>
+<!--        <me.ibrahimsn.lib.SmoothBottomBar-->
+<!--            android:id="@+id/bottomBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:menu="@menu/botom_bar_menu"-->
+<!--            app:backgroundColor="@color/white"-->
+<!--            app:indicatorColor="#524CB050"-->
+<!--            app:indicatorRadius="7dp"-->
+<!--            app:sideMargins="7dp"-->
+<!--            app:itemPadding="7dp"-->
+<!--            app:textColor="@color/colorPrimary"-->
+<!--            app:textSize="14dp"-->
+<!--            app:iconSize="24dp"-->
+<!--            app:iconTint="#8C8C8C"-->
+<!--            android:elevation="7dp"-->
+<!--            app:iconTintActive="@color/colorPrimary"/>-->
+      </LinearLayout>
+</FrameLayout>
